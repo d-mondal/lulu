@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&family=Rubik+Doodle+Shadow&display=swap');
+
+:root {
+--lg-font: 'Rubik Doodle Shadow' ,    
+--sm-font: 'Oswald', sans-serif;
+--dark: #646E78;
+--grey: #8D98A7;
+--cream: #DCCCBB;
+--yellow: #EAB464;
+--brown: #A7754D;
+}
+
+body {
+    font-family: var(--sm-font);
+}
+
+.bg-primary {
+    background-color: var(--grey)!important;
+}
+
+.btn:not(.nav-btns button) {
+    background-color: #EAB464;
+    color: black;
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+}
+
+.btn:not(.nav-btns button):hover {
+    background-color: #8D98A7;
+    color:#DCCCBB;
+    border-color: #8D98A7;
+}
+
+.navbar {
+    box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img{
+    width:60px;
+}
+
+.navbar-brand span{
+    letter-spacing: 2px;
+    font-family: var(--lg-font);
+}
+
+.navbar-link:hover {
+    color: var(--brown)!important;
+}
+
+@media(min-width:992px) {
+    .nav-item {
+        border-bottom: none;
+    }
+}
+
+#header {
+    background: url(bg.jpg) top/cover no-repeat;
+    
+}
+
+.carousel-inner h1{
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+
+.carousel-item .btn{
+    border-color:#DCCCBB!important;
+}
+
+.carousel-item .btn:hover{
+    border-color: #EAB464!important;
+}
+
+.title h2{
+    position: absolute;
+    margin-top: 20px;
+}
+
+.title h2::before{
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: #EAB464;
+    left: -20px;
+    top: 20px;
+    transform: translateY(-50%);
+}
+
+.active-filter-btn {
+    background-color: #EAB464;
+    color:black!important;
+    border-color: #646E78;
+}
+
+.box img{
+    height: 350px;
+    width: 300px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
